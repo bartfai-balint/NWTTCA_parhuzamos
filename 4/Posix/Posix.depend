@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1680691501 source:d:\valal\parhuzamos\nwttca_parhuzamos\4\posix\main.c
+	<pthread.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<time.h>
+	<unistd.h>
+
