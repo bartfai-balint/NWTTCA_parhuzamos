@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1685486611 source:d:\valal\parhuzamos\nwttca_parhuzamos\4\beadandópthread\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<pthread.h>
+
