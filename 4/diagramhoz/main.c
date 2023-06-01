@@ -4,7 +4,7 @@
 #include <pthread.h>
 #include <time.h>
 
-#define MAX_CITIES 1000
+#define MAX_CITIES 5
 #define MAX_ANTS 100
 #define MAX_ITERATIONS 100
 #define ALPHA 1.0
@@ -120,30 +120,19 @@ void printCities() {
     }
 }
 
-void generateRandomCities() {
-    for( int i = 0; i < numCities; i++){
-        cities[i].x = rand() % 100;
-        cities[i].y = rand() % 100;
-     }
-}
-
 int main() {
+
 
     srand(time(NULL));
 
-    printf("Enter the number of cities: ");
-    scanf("%d", &numCities);
-    printf("Enter the number of ants: ");
-    scanf("%d", &numAnts);
-    printf("Enter the number of iterations: ");
-    scanf("%d", &numIterations);
+    numAnts = MAX_ANTS;
+    numIterations = MAX_ITERATIONS;
 
-    clock_t start, end;
-    double cpu_time_used;
-
-    start = clock();
-
-    generateRandomCities();
+    cities[0].x = 60; cities[0].y = 200;
+    cities[1].x = 180; cities[1].y = 200;
+    cities[2].x = 80; cities[2].y = 180;
+    cities[3].x = 140; cities[3].y = 180;
+    cities[4].x = 20; cities[4].y = 160;
 
     calculateDistances();
     initializePheromones();
@@ -169,10 +158,6 @@ int main() {
     updatePheromones();
     printBestTour();
     printCities();
-
-     end = clock();
-     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("A program futasi ideje: %f másodperc\n", cpu_time_used);
 
 
     return 0;

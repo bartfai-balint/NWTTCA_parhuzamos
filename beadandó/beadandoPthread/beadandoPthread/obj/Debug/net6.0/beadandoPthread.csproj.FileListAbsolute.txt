@@ -1,0 +1,15 @@
+D:\valal_c#\beadandoPthread\beadandoPthread\bin\Debug\net6.0\beadandoPthread.exe
+D:\valal_c#\beadandoPthread\beadandoPthread\bin\Debug\net6.0\beadandoPthread.deps.json
+D:\valal_c#\beadandoPthread\beadandoPthread\bin\Debug\net6.0\beadandoPthread.runtimeconfig.json
+D:\valal_c#\beadandoPthread\beadandoPthread\bin\Debug\net6.0\beadandoPthread.dll
+D:\valal_c#\beadandoPthread\beadandoPthread\bin\Debug\net6.0\beadandoPthread.pdb
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.csproj.AssemblyReference.cache
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.GeneratedMSBuildEditorConfig.editorconfig
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.AssemblyInfoInputs.cache
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.AssemblyInfo.cs
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.csproj.CoreCompileInputs.cache
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.dll
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\refint\beadandoPthread.dll
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.pdb
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\beadandoPthread.genruntimeconfig.cache
+D:\valal_c#\beadandoPthread\beadandoPthread\obj\Debug\net6.0\ref\beadandoPthread.dll

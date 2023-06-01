@@ -10,7 +10,7 @@
 #define RHO 0.5
 #define QVAL 100
 #define MAX_TOUR (MAX_CITIES * MAX_CITIES)
-#define MAX_DIST 1000
+#define MAX_DIST 10000
 
 int numCities;
 int numAnts;
@@ -54,6 +54,7 @@ int main() {
         constructAntSolutions();
         updatePheromones();
 
+         // Frissíti a legjobb útvonalat és annak hosszát
         #pragma omp parallel for
         for (int ant = 0; ant < numAnts; ant++) {
             if (antLength[ant] < bestTourLength) {
@@ -96,7 +97,7 @@ void initialize() {
         }
     }
 
-    bestTourLength = MAX_DIST * numCities;
+    bestTourLength = MAX_DIST * (numCities - 1);
 
     for (int ant = 0; ant < numAnts; ant++) {
         antLength[ant] = bestTourLength;
@@ -161,26 +162,19 @@ void updatePheromones() {
         for (to = 0; to < numCities; to++) {
             if (from != to) {
                 pheromones[from][to] *= (1.0 - RHO);
-
-                if (pheromones[from][to] < 0.0) {
-                    pheromones[from][to] = 0.01;
-                }
+                pheromones[from][to] = fmax(pheromones[from][to], 0.01);
             }
         }
     }
 
     for (ant = 0; ant < numAnts; ant++) {
+        double antContribution = QVAL / antLength[ant];
+
         for (i = 0; i < numCities - 1; i++) {
             from = antTour[ant][i];
             to = antTour[ant][i + 1];
-            pheromones[from][to] += (QVAL / antLength[ant]);
-            pheromones[to][from] = pheromones[from][to];
-        }
-    }
-
-    for (from = 0; from < numCities; from++) {
-        for (to = 0; to < numCities; to++) {
-            pheromones[from][to] *= RHO;
+            pheromones[from][to] += antContribution;
+            pheromones[to][from] += antContribution;  // Helyesítés: += helyett =
         }
     }
 }
