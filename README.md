@@ -1,10 +1,15 @@
 A program ant colony optimization(ACO)-el fogja megoldani az utazó ügynök problémát(TSP) 
 Több hangyát lehet egyszerre mozgatni.
+
 Gráf pontok mennyisége szabályozható.
+
 Iterációk mennyisége szabályozható
-Fésülő rendezéssel
-Pthread-el
-OpenMp-vel
+
+Pthread-el c#-ban
+
+Pthread-el c-ben
+
+OpenMp-vel c-ben
 
 Pthread megoldással szálak/idő aránya: 
 
@@ -13,10 +18,3 @@ Pthread megoldással szálak/idő aránya:
 Pthread megoldással városok száma/idő aránya:
 
 ![image](https://github.com/bartfai-balint/NWTTCA_parhuzamos/assets/79147031/a9f6ce17-266c-46c2-8073-0881af20641d)
-
-
-beadandóPthread c-ben
-
-beadandoPthread c#-ban
-
-parhuzamosBeadando c-ben
